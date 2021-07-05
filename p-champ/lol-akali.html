@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Akali - The Rogue Assassin</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<img src="../assets/images/champ-akali.png" alt="champ-akali">
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a href="../lol-reg.html">Regions</a></li>
+			<li><a class="active" href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-champ-detail">
+		<div class="l-container">
+			<div class="p-champ-detail__inner">
+				<div class="p-champ-detail__intro">
+					<div class="p-champ-detail__name">
+						<div class="c-title01">
+							<span>Akali</span>
+						</div>
+						<div class="c-title03">
+							<span>The Rogue Assassin</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__about">
+						<div class="p-champ-detail__role">
+							<img src="../assets/images/assassin.png" alt="assassin">
+							<p>assassin</p>
+						</div>
+						<div class="p-champ-detail__bio">
+							<p>“I am not your enemy. I am the enemy.”“The only rule that matters is that
+								your enemies don't walk away.”</p>
+							<span>
+								When Akali walked away from the Kinkou Order, she defined her fighting style beyond
+								Shen's teachings. No longer one to cut enemies down in a burst of up-close kama
+								flourishes, Ionia's Rogue Assassin employs hit-and-run tactics: constantly shifting
+								position as she strikes, steps back into stealth, then strikes again.</span>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__screenshot"><img src="../assets/images/akali-screen.png" alt="akali-screen">
+				</div>
+				<div class="p-champ-detail__ability">
+					<p class="c-title02">Abilities</p>
+					<div class="p-champ-detail__ability-list only-768">
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/akaliP.png"
+								alt="akaliP" onclick="currentSlide01(1)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/akaliQ.png"
+								alt="akaliQ" onclick="currentSlide01(2)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/akaliW.png"
+								alt="akaliW" onclick="currentSlide01(3)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/akaliE.png"
+								alt="akaliE" onclick="currentSlide01(4)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/akaliR.png"
+								alt="akaliR" onclick="currentSlide01(5)"></div>
+					</div>
+					<div class="p-champ-detail__ability-txt only-768">
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>ASSASSIN'S MARK (Passive)</p>
+							<span>Damaging a champion with an ability creates a ring around them. When the ring forms,
+								Akali gains a burst of movement speed towards it. Once she crosses the ring, Akali gains
+								another burst of movement speed towards the enemy. Crossing the ring also empowers her kama, which increases the range and damage of her
+								next attack. This attack also restores a small amount of energy.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>FIVE POINT STRIKE (Q)</p>
+							<span>Akali throws out five kunai, dealing damage based on her bonus Attack Damage and
+								Ability Power and slowing.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>TWILIGHT SHROUD (W)</p>
+							<span>Akali drops a cover of smoke and briefly gains Movement Speed. While inside the
+								shroud, Akali becomes invisible and unable to be selected by enemy spells and attacks.
+								Attacking or using abilities will briefly reveal her.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>SHURIKEN FLIP (E)</p>
+							<span>Flip backward and fire a shuriken forward, dealing magic damage. The first enemy or
+								smoke cloud hit is marked. Re-cast to dash to the marked target, dealing additional
+								damage.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>PERFECT EXECUTION (R)</p>
+							<span>Akali leaps in a direction, damaging enemies she strikes. Re-cast: Akali dashes in a
+								direction, executing all enemies she strikes.</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-vid only-768">
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/akaliP.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/akaliQ.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/akaliW.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/akaliE.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/akaliR.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-box pc-769">
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/akaliP.png" alt="akaliP">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>ASSASSIN'S MARK (Passive)</p>
+								<span>Damaging a champion with an ability creates a ring around them. When the ring
+									forms, Akali gains a burst of movement speed towards it. Once she crosses the ring,
+									Akali gains another burst of movement speed towards the enemy.</span><br>
+								<span>Crossing the ring also empowers her kama, which increases the range and damage of
+									her next attack. This attack also restores a small amount of energy.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/akaliQ.png" alt="akaliQ">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>FIVE POINT STRIKE (Q)</p>
+								<span>Akali throws out five kunai, dealing damage based on her bonus Attack Damage and
+									Ability Power and slowing.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/akaliW.png" alt="akaliW">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>TWILIGHT SHROUD (W)</p>
+								<span>Akali drops a cover of smoke and briefly gains Movement Speed. While inside the
+									shroud, Akali becomes invisible and unable to be selected by enemy spells and
+									attacks. Attacking or using abilities will briefly reveal her.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/akaliE.png" alt="akaliE">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>SHURIKEN FLIP (E)</p>
+								<span>Flip backward and fire a shuriken forward, dealing magic damage. The first enemy
+									or smoke cloud hit is marked. Re-cast to dash to the marked target, dealing
+									additional damage.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/akaliR.png" alt="akaliR">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>PERFECT EXECUTION (R)</p>
+								<span>Akali leaps in a direction, damaging enemies she strikes. Re-cast: Akali dashes in
+									a direction, executing all enemies she strikes.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__skin">
+					<p class="c-title02">Available Skins</p>
+					<div class="p-champ-detail__skin-inner">
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-01.png" alt="akali-01">
+							<p>Nurse Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-02.png" alt="akali-02">
+							<p>Blood Moon Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-03.png" alt="akali-03">
+							<p>Silverfang Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-04.png" alt="akali-04">
+							<p>Headhunter Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-05.png" alt="akali-05">
+							<p>Sashimi Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-06.png" alt="akali-06">
+							<p>K/DA Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-06.png" alt="akali-07">
+							<p>PROJECT: Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-06.png" alt="akali-08">
+							<p>All-star Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-06.png" alt="akali-09">
+							<p>True Damage Akali</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/akali-06.png" alt="akali-10">
+							<p>K/DA All Out Akali</p>
+						</div>
+					</div>
+					<div class="p-champ-detail__skin-list only-768">
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(1)"><img
+								src="../assets/images/akali-01.png" alt="akali-01"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(2)"><img
+								src="../assets/images/akali-02.png" alt="akali-02"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(3)"><img
+								src="../assets/images/akali-03.png" alt="akali-03"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(4)"><img
+								src="../assets/images/akali-04.png" alt="akali-04"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(5)"><img
+								src="../assets/images/akali-05.png" alt="akali-05"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(6)"><img
+								src="../assets/images/akali-06.png" alt="akali-06"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(7)"><img
+								src="../assets/images/akali-07.png" alt="akali-07"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(8)"><img
+								src="../assets/images/akali-08.png" alt="akali-08"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(9)"><img
+								src="../assets/images/akali-09.png" alt="akali-09"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(10)"><img
+								src="../assets/images/akali-10.png" alt="akali-10"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a class="active" href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-champ.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

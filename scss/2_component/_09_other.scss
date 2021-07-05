@@ -1,0 +1,85 @@
+/*------------------------------------------------------------
+	Other
+------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+	.pc {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.sp {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.only-pc {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.only-768 {
+		display: none !important;
+	}
+}
+@media (min-width: 1200px) {
+	.pc-1200 {
+		display: none;
+	}
+}
+@media (min-width: 769px) {
+	.pc-769 {
+		display: none;
+	}
+}
+
+.c-backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    @include sp {
+        bottom: 10px;
+        right: 10px;
+    }
+    a {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 1;
+        color: $color2;
+        border: 2px solid $color1;
+		background-color: $color1;
+		font-weight: 500;
+        @include sp {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+        }
+		&:hover {
+			color: $color3;
+		}
+    }
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}                
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}                
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Bandle City</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-bandle-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/bandle-symbol.png" alt="bandle-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>Bandle City</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"If I didn't have to protect Book, I'd just be a normal magical
+							cat floating
+							around Bandle City!"<span>- Yuumi</span></p>
+						<p class="p-reg-detail__bio">
+							Opinions differ as to where exactly the home of the Yordles is to be found, though a handful
+							of mortals claim to have traveled unseen pathways to a land of curious enchantment beyond
+							the material realm. They tell of a place of unfettered magic, where the foolhardy can be led
+							astray by myriad wonders, and end up lost in a dream...This might explain why those mortals
+							who find their way back often appear to have aged tremendously, while many more never return
+							at all.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of Bandle City</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bandle01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bandle02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bandle03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bandle04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bandle01.png" alt="vision-bandle01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Otherworldly Gateways</p>
+								<span>Runeterra is linked to an enchanted place in the spirit realm known as Bandle
+									City. The pathways are rarely seen by mortals, for they only open under
+									particular circumstances, or for those with the ability to read and interpret
+									the language of the yordles.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bandle02.png" alt="vision-bandle02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Geometry of Transit</p>
+								<span>Certain pathways can only be opened with a series of specific gestures, often
+									defined by peculiar symbols inscribed nearby. This particular portal opens to a
+									deep cavern, when the low tide reveals a pattern of runic circles, filling the
+									indentations with sea water.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bandle03.png" alt="vision-bandle03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Deep in the Bandlewood</p>
+								<span>While there are portals whose positions can shift over time, there are many
+									that stay rooted in a single location. The magic of the spirit realm
+									occasionally ebbs back and forth around such places—known as bandlewoods—and
+									affects the local flora and fauna in strange, unpredictable ways.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bandle04.png" alt="vision-bandle04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Deep in the Bandlewood</p>
+								<span>While there are portals whose positions can shift over time, there are many
+									that stay rooted in a single location. The magic of the spirit realm
+									occasionally ebbs back and forth around such places—known as bandlewoods—and
+									affects the local flora and fauna in strange, unpredictable ways.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in Bandle City</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-corki.html">
+								<img src="../assets/images/champ-corki.png" alt="champ-corki">
+								<p class="p-reg-detail__champ-txt">corki</p>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-lulu.html">
+								<img src="../assets/images/champ-lulu.png" alt="champ-lulu">
+								<p class="p-reg-detail__champ-txt">lulu</p>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-rumble.html">
+								<img src="../assets/images/champ-rumble.png" alt="champ-rumble">
+								<p class="p-reg-detail__champ-txt">rumble</p>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-teemo.html">
+								<img src="../assets/images/champ-teemo.png" alt="champ-teemo">
+								<p class="p-reg-detail__champ-txt">teemo</p>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-tris.html">
+								<img src="../assets/images/champ-tris.png" alt="champ-tris">
+								<p class="p-reg-detail__champ-txt">tristana</p>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-veigar.html">
+								<img src="../assets/images/champ-veigar.png" alt="champ-veigar">
+								<p class="p-reg-detail__champ-txt">veigar</p>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-yuumi.html">
+								<img src="../assets/images/champ-yuumi.png" alt="champ-yuumi">
+								<p class="p-reg-detail__champ-txt">yuumi</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img
+									src="../assets/images/bilge-logo.png" alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img
+									src="../assets/images/demacia-logo.png" alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img
+									src="../assets/images/ionia-logo.png" alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img
+									src="../assets/images/ixtal-logo.png" alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img
+									src="../assets/images/noxus-logo.png" alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img
+									src="../assets/images/shadow-logo.png" alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img
+									src="../assets/images/shurima-logo.png" alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img
+									src="../assets/images/targon-logo.png" alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img
+									src="../assets/images/frel-logo.png" alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img
+									src="../assets/images/void-logo.png" alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img
+									src="../assets/images/zaun-logo.png" alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

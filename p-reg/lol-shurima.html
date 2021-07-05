@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Welcome To My Worlds</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-shurima-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/shurima-symbol.png" alt="shurima-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>Shurima</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"Shurima is where all paths converge."<span>- Azir</span></p>
+						<p class="p-reg-detail__bio">
+							The empire of Shurima was once a thriving civilization that spanned an entire continent. After several thousand years of growth and prosperity, the failed Ascension of Shurima’s last emperor left the capital in ruins, and tales of the empire’s former glory became little more than myth...Still, a handful dare to dream of a return to the old ways. Indeed, more recently the tribes have been stirred by whispers from the heart of the desert—that their emperor Azir has returned, to lead them into a new, wondrous age.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of Shurima</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-shurima01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-shurima02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-shurima03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-shurima04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-shurima05.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-shurima01.png" alt="vision-shurima01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Rebuilt Sun Disc Over The Streets of Nashramae</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-shurima02.png" alt="vision-shurima02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Sands Recede, and Shurima Is Reborn</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-shurima03.png" alt="vision-shurima03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Shurima's People Return To Their Ancestral Home</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-shurima04.png" alt="vision-shurima04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Ruins of Shurima</p>
+									<span>Its once grand palaces and citadels cast to ruin</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-shurima05.png" alt="vision-shurima05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Zoantha Cascade</p>
+								<span>The shifting tides of the desert has been known to carve paths through bare rock, tumbling over the cliff faces in massive sandfalls. Traditionally, Shurimans toss beloved objects into the sands as gifts to the Ascended. As a result, such falls are often lucrative spots for treasure hunters.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in Shurima</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-amumu.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-amumu.png" alt="champ-amumu">
+									<p class="p-reg-detail__champ-txt">amumu</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-azir.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-azir.png" alt="champ-azir">
+									<p class="p-reg-detail__champ-txt">azir</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-nasus.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-nasus.png" alt="champ-nasus">
+									<p class="p-reg-detail__champ-txt">nasus</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-rammus.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-rammus.png" alt="champ-rammus">
+									<p class="p-reg-detail__champ-txt">rammus</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-renekton.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-renekton.png" alt="champ-renekton">
+									<p class="p-reg-detail__champ-txt">renekton</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-rengar.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-rengar.png" alt="champ-rengar">
+									<p class="p-reg-detail__champ-txt">rengar</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-sivir.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-sivir.png" alt="champ-sivir">
+									<p class="p-reg-detail__champ-txt">sivir</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-skarner.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-skarner.png" alt="champ-skarner">
+									<p class="p-reg-detail__champ-txt">skarner</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-taliyah.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-taliyah.png" alt="champ-taliyah">
+									<p class="p-reg-detail__champ-txt">taliyah</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-xerath.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-xerath.png" alt="champ-xerath">
+									<p class="p-reg-detail__champ-txt">xerath</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img
+									src="../assets/images/bandle-logo.png" alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img
+									src="../assets/images/bilge-logo.png" alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img
+									src="../assets/images/demacia-logo.png" alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img
+									src="../assets/images/ionia-logo.png" alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img
+									src="../assets/images/ixtal-logo.png" alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img
+									src="../assets/images/noxus-logo.png" alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img
+									src="../assets/images/shadow-logo.png" alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img
+									src="../assets/images/targon-logo.png" alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img src="../assets/images/frel-logo.png"
+									alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img src="../assets/images/void-logo.png"
+									alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img src="../assets/images/zaun-logo.png"
+									alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Aatrox - The Darkin Blade</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<img src="../assets/images/champ-aatrox.png" alt="champ-aatrox">
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a href="../lol-reg.html">Regions</a></li>
+			<li><a class="active" href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+
+	<main class="p-champ-detail">
+		<div class="l-container">
+			<div class="p-champ-detail__inner">
+				<div class="p-champ-detail__intro">
+					<div class="p-champ-detail__name">
+						<div class="c-title01">
+							<span>Aatrox</span>
+						</div>
+						<div class="c-title03">
+							<span>The Darkin Blade</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__about">
+						<div class="p-champ-detail__role">
+							<img src="../assets/images/fighter.png" alt="fighter">
+							<p>fighter</p>
+						</div>
+						<div class="p-champ-detail__bio">
+							<p>“I am not your enemy. I am the enemy.”</p>
+							<span>
+								A fallen god-warrior who once threatened to destroy Runeterra, Aatrox and his kin were
+								bound to ancient weapons and imprisoned for centuries. That age is over. Now, with
+								stolen flesh warped in brutal approximation of his previous form, the Darkin Blade seeks
+								an apocalyptic and long overdue vengeance: Total obliteration.</span>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__screenshot"><img src="../assets/images/aatrox-screen.png"
+						alt="aatrox-screen"></div>
+				<div class="p-champ-detail__ability">
+					<p class="c-title02">Abilities</p>
+					<div class="p-champ-detail__ability-list only-768">
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/aatroxP.png"
+								alt="aatroxP" onclick="currentSlide01(1)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/aatroxQ.png"
+								alt="aatroxQ" onclick="currentSlide01(2)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/aatroxW.png"
+								alt="aatroxW" onclick="currentSlide01(3)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/aatroxE.png"
+								alt="aatroxE" onclick="currentSlide01(4)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/aatroxR.png"
+								alt="aatroxR" onclick="currentSlide01(5)"></div>
+					</div>
+					<div class="p-champ-detail__ability-txt only-768">
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>DEATHBRINGER STANCE (Passive)</p>
+							<span>Periodically, Aatrox's next basic attack deals bonus physical damage and heals
+								him, based on the target's max health.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>THE DARKIN BLADE (Q)</p>
+							<span>Aatrox slams his greatsword down, dealing physical damage. He can swing three
+								times, each with a different area of effect.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>INFERNAL CHAINS (W)</p>
+							<span>Aatrox smashes the ground, dealing damage to the first enemy hit. Champions
+								and large monsters have to leave the impact area quickly or they will be dragged
+								to the center and take the damage again.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>UMBRAL DASH (E)</p>
+							<span>Passively, Aatrox heals when damaging enemy champions. On activation, he
+								dashes in a direction.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>WORLD ENDER (R)</p>
+							<span>Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining
+								attack damage, increased healing, and movement speed. If he gets a takedown,
+								this effect is extended.</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-vid only-768">
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/aatroxP.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/aatroxQ.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/aatroxW.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/aatroxE.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/aatroxR.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-box pc-769">
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/aatroxP.png" alt="aatroxP">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>DEATHBRINGER STANCE (Passive)</p>
+								<span>Periodically, Aatrox's next basic attack deals bonus physical damage and heals
+									him, based on the target's max health.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/aatroxQ.png" alt="aatroxQ">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>THE DARKIN BLADE (Q)</p>
+								<span>Aatrox slams his greatsword down, dealing physical damage. He can swing three
+									times, each with a different area of effect.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/aatroxW.png" alt="aatroxW">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>INFERNAL CHAINS (W)</p>
+								<span>Aatrox smashes the ground, dealing damage to the first enemy hit. Champions
+									and large monsters have to leave the impact area quickly or they will be dragged
+									to the center and take the damage again.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/aatroxE.png" alt="aatroxE">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>UMBRAL DASH (E)</p>
+								<span>Passively, Aatrox heals when damaging enemy champions. On activation, he
+									dashes in a direction.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/aatroxR.png" alt="aatroxR">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>WORLD ENDER (R)</p>
+								<span>Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining
+									attack damage, increased healing, and movement speed. If he gets a takedown,
+									this effect is extended.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__skin">
+					<p class="c-title02">Available Skins</p>
+					<div class="p-champ-detail__skin-inner">
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/aatrox-01.png" alt="aatrox-01">
+							<p>Justicar Aatrox</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/aatrox-02.png" alt="aatrox-02">
+							<p>Mecha Aatrox</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/aatrox-03.png" alt="aatrox-03">
+							<p>Sea Hunter Aatrox</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/aatrox-04.png" alt="aatrox-04">
+							<p>Blood Moon Aatrox</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/aatrox-05.png" alt="aatrox-05">
+							<p>Odyssey Aatrox</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/aatrox-06.png" alt="aatrox-06">
+							<p>Victorious Aatrox</p>
+						</div>
+					</div>
+					<div class="p-champ-detail__skin-list only-768">
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(1)"><img
+								src="../assets/images/aatrox-01.png" alt="aatrox-01"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(2)"><img
+								src="../assets/images/aatrox-02.png" alt="aatrox-02"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(3)"><img
+								src="../assets/images/aatrox-03.png" alt="aatrox-03"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(4)"><img
+								src="../assets/images/aatrox-04.png" alt="aatrox-04"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(5)"><img
+								src="../assets/images/aatrox-05.png" alt="aatrox-05"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(6)"><img
+								src="../assets/images/aatrox-06.png" alt="aatrox-06"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a class="active" href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-champ.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

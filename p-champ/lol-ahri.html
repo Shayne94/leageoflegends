@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Ahri - The Nine-Tailed Fox</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<img src="../assets/images/champ-ahri.png" alt="champ-ahri">
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a href="../lol-reg.html">Regions</a></li>
+			<li><a class="active" href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-champ-detail">
+		<div class="l-container">
+			<div class="p-champ-detail__inner">
+				<div class="p-champ-detail__intro">
+					<div class="p-champ-detail__name">
+						<div class="c-title01">
+							<span>Ahri</span>
+						</div>
+						<div class="c-title03">
+							<span>The Nine-Tailed Fox</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__about">
+						<div class="p-champ-detail__role">
+							<img src="../assets/images/mage.png" alt="mage">
+							<p>mage</p>
+						</div>
+						<div class="p-champ-detail__bio">
+							<p>“Human emotions can be more volatile than even the deepest magic.”</p>
+							<span>
+								Innately connected to the latent power of Runeterra, Ahri is a vastaya who can reshape
+								magic
+								into orbs of raw energy. She revels in toying with her prey by manipulating their
+								emotions
+								before devouring their life essence. Despite her predatory nature, Ahri retains a sense
+								of
+								empathy as she receives flashes of memory from each soul she consumes.</span>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__screenshot"><img src="../assets/images/ahri-screen.png" alt="ahri-screen">
+				</div>
+				<div class="p-champ-detail__ability">
+					<p class="c-title02">Abilities</p>
+					<div class="p-champ-detail__ability-list only-768">
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/ahriP.png"
+								alt="ahriP" onclick="currentSlide01(1)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/ahriQ.png"
+								alt="ahriQ" onclick="currentSlide01(2)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/ahriW.png"
+								alt="ahriW" onclick="currentSlide01(3)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/ahriE.png"
+								alt="ahriE" onclick="currentSlide01(4)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/ahriR.png"
+								alt="ahriR" onclick="currentSlide01(5)"></div>
+					</div>
+					<div class="p-champ-detail__ability-txt only-768">
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>ESSENCE THEFT (Passive)</p>
+							<span>When Ahri strikes 9 enemies with her abilities, her next ability also heals her
+								for each enemy hit.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>ORB OF DECEPTION (Q)</p>
+							<span>Ahri sends out and pulls back her orb, dealing magic damage on the way out and
+								true damage on the way back.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>FOX-FIRE (W)</p>
+							<span>Ahri gains a brief burst of movement speed and releases three fox-fires, that lock
+								onto and attack nearby enemies.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>CHARM (E)</p>
+							<span>Ahri blows a kiss that damages and charms an enemy it encounters, instantly
+								stopping movement abilities and causing them to walk harmlessly towards her. The
+								target temporarily takes increased damage from Ahri.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>SPIRIT RUSH (R)</p>
+							<span>Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush
+								can be cast up to three times before going on cooldown.</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-vid only-768">
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/ahriP.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/ahriQ.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/ahriW.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/ahriE.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/ahriR.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-box pc-769">
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/ahriP.png" alt="ahriP">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>ESSENCE THEFT (Passive)</p>
+								<span>When Ahri strikes 9 enemies with her abilities, her next ability also heals her
+									for each enemy hit.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/ahriQ.png" alt="ahriQ">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>ORB OF DECEPTION (Q)</p>
+								<span>Ahri sends out and pulls back her orb, dealing magic damage on the way out and
+									true damage on the way back.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/ahriW.png" alt="ahriW">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>FOX-FIRE (W)</p>
+								<span>Ahri gains a brief burst of movement speed and releases three fox-fires, that lock
+									onto and attack nearby enemies.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/ahriE.png" alt="ahriE">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>CHARM (E)</p>
+								<span>Ahri blows a kiss that damages and charms an enemy it encounters, instantly
+									stopping movement abilities and causing them to walk harmlessly towards her. The
+									target temporarily takes increased damage from Ahri.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/ahriR.png" alt="ahriR">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>SPIRIT RUSH (R)</p>
+								<span>Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush
+									can be cast up to three times before going on cooldown.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__skin">
+					<p class="c-title02">Available Skins</p>
+					<div class="p-champ-detail__skin-inner">
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-01.png" alt="ahri-01">
+							<p>Foxfire Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-02.png" alt="ahri-02">
+							<p>Popstar Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-03.png" alt="ahri-03">
+							<p>Academy Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-04.png" alt="ahri-04">
+							<p>Academy Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-05.png" alt="ahri-05">
+							<p>Spirit Blossom Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-06.png" alt="ahri-06">
+							<p>Arcade Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-07.png" alt="ahri-07">
+							<p>K/DA Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-08.png" alt="ahri-08">
+							<p>Star Guardian Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-09.png" alt="ahri-09">
+							<p>Elderwood Ahri</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/ahri-10.png" alt="ahri-10">
+							<p>K/DA All Out Ahri</p>
+						</div>
+					</div>
+					<div class="p-champ-detail__skin-list only-768">
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(1)"><img
+								src="../assets/images/ahri-01.png" alt="ahri-01"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(2)"><img
+								src="../assets/images/ahri-02.png" alt="ahri-02"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(3)"><img
+								src="../assets/images/ahri-03.png" alt="ahri-03"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(4)"><img
+								src="../assets/images/ahri-04.png" alt="ahri-04"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(5)"><img
+								src="../assets/images/ahri-05.png" alt="ahri-05"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(6)"><img
+								src="../assets/images/ahri-06.png" alt="ahri-06"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(7)"><img
+								src="../assets/images/ahri-07.png" alt="ahri-07"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(8)"><img
+								src="../assets/images/ahri-08.png" alt="ahri-08"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(9)"><img
+								src="../assets/images/ahri-09.png" alt="ahri-09"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(10)"><img
+								src="../assets/images/ahri-10.png" alt="ahri-10"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a class="active" href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-champ.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

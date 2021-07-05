@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Piltover</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-piltover-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/piltover-symbol.png" alt="piltover-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>Piltover</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"For Piltover!"<span>- Jayce</span></p>
+						<p class="p-reg-detail__bio">
+							Piltover is a thriving, progressive city whose power and influence is on the rise. It is Valoran’s cultural center, where art, craftsmanship, trade and innovation walk hand in hand. Its power comes not through military might, but the engines of commerce and forward thinking...Burgeoning merchant clans fund development in the most incredible endeavors: grand artistic follies, esoteric hextech research, and architectural monuments to their power.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of Piltover</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-piltover01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-piltover02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-piltover03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-piltover04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-piltover05.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-piltover01.png" alt="vision-piltover01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Zindelo's Incognium Runeterra</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-piltover02.png" alt="vision-piltover02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Ecliptic Vaults, Piltover's Most Secure Bank</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-piltover03.png" alt="vision-piltover03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Sidereal Avenue, Entrance To Piltover Treasury</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-piltover04.png" alt="vision-piltover04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Trade and Progress</p>
+									<span>The ancient city of Zaun was a northern Shuriman trading post, but it was the creation of Piltover’s sea-gates more than three thousand years later that brought even greater prosperity.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-piltover05.png" alt="vision-piltover05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Impacts Across Valoran</p>
+									<span>Trade is the lifeblood of Piltover, and its command of the main sea-route between east and west has seen its coffers swell with gold. A consequence of this has been the rapid expansion of the Noxian empire, whose armies and supplies can now travel the length and breadth of Valoran with relative ease. It has also allowed Bilgewater to prosper as a haven for reavers who prey on ships traveling to and from Piltover.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in Piltover</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-camille.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-camille.png" alt="champ-camille">
+									<p class="p-reg-detail__champ-txt">camille</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-caitlyn.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-caitlyn.png" alt="champ-caitlyn">
+									<p class="p-reg-detail__champ-txt">caitlyn</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-ezreal.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-ezreal.png" alt="champ-ezreal">
+									<p class="p-reg-detail__champ-txt">ezreal</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-jayce.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-jayce.png" alt="champ-jayce">
+									<p class="p-reg-detail__champ-txt">jayce</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-orianna.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-orianna.png" alt="champ-orianna">
+									<p class="p-reg-detail__champ-txt">orianna</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-sera.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-sera.png" alt="champ-sera">
+									<p class="p-reg-detail__champ-txt">seraphine</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-vi.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-vi.png" alt="champ-vi">
+									<p class="p-reg-detail__champ-txt">vi</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-heimer.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-heimer.png" alt="champ-heimer">
+									<p class="p-reg-detail__champ-txt">heimerdinger</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img
+									src="../assets/images/bandle-logo.png" alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img
+									src="../assets/images/bilge-logo.png" alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img
+									src="../assets/images/demacia-logo.png" alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img
+									src="../assets/images/ionia-logo.png" alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img
+									src="../assets/images/ixtal-logo.png" alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img
+									src="../assets/images/noxus-logo.png" alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img
+									src="../assets/images/shadow-logo.png" alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img
+									src="../assets/images/shurima-logo.png" alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img
+									src="../assets/images/targon-logo.png" alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img src="../assets/images/frel-logo.png"
+									alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img src="../assets/images/void-logo.png"
+									alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img src="../assets/images/zaun-logo.png"
+									alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a class="active" href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

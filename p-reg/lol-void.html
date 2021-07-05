@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Welcome To My Worlds</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-void-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/void-symbol.png" alt="void-symbol">
+				</div>
+				<div class="intro">
+					<div class="c-title01">
+						<span>The Void</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"For the Void."<span>- Malzahar</span></p>
+						<p class="p-reg-detail__bio">
+							Screaming into existence with the birth of the universe, the Void is a manifestation of the
+							unknowable nothingness that lies beyond. It is a force of insatiable hunger, waiting through
+							the eons until its masters, the mysterious Watchers, mark the final time of undoing.
+							Denizens of the Void realm itself are construct-creatures, often of only limited sentience,
+							but tasked with a singular purpose - to usher in total oblivion across Runeterra.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of The Void</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-void01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-void02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-void03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-void04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-void05.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-void01.png" alt="vision-void01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>An Unknowable Power</p>
+									<span>In the abyssal darkness, deep underground, it is believed that the first great
+										Void creatures to walk the surface of Runeterra now lie, dormant and unseen. If
+										that is true, then they have waited patiently through the millennia, and it must
+										surely now be time for them to rise once more.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-void02.png" alt="vision-void02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Fall of Icathia</p>
+								<span>A great and terrible battle was fought against the Void before the walls of
+									ancient Icathia. In the aftermath, the lands all around the damned city became
+									deserted wastes, and its very existence was struck from the maps of Shurima. It
+									was hoped, perhaps foolishly, that the horrors unleashed there would eventually
+									be forgotten...</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-void03.png" alt="vision-void03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Rupture</p>
+								<span>On the outskirts of Icathia lies the Rupture—evidence of the Void itself
+									bursting forth from deep beneath the ground, in an age now lost to history.
+									Though the bold and the curious alike have often sought to learn more, only the
+									most foolhardy explorer would ever dare venture into the dark spaces
+									beneath.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-void04.png" alt="vision-void04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Salt The Earth</p>
+								<span>One of the few known ways to combat the Void is to starve it. With no organic
+									or magical sustenance nearby, the Void’s material growth will slow, until it
+									eventually falls into a dormant state.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-void05.png" alt="vision-void05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Touch of The Void</p>
+								<span>Over the centuries, many mortals from the world above have answered the Void’s
+									call, or been dragged down against their will. There are those among them—few
+									and far between—who have survived the encounter... though not a single one of
+									them returned </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in The Void</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-chogath.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-chogath.png" alt="champ-chogath">
+									<p class="p-reg-detail__champ-txt">cho'Gath</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-kass.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-kass.png" alt="champ-kass">
+									<p class="p-reg-detail__champ-txt">kassadin</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-khazix.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-khazix.png" alt="champ-khazix">
+									<p class="p-reg-detail__champ-txt">kha'Zix</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-kaisa.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-kaisa.png" alt="champ-kaisa">
+									<p class="p-reg-detail__champ-txt">kai'Sa</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-kogmaw.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-kogmaw.png" alt="champ-kogmaw">
+									<p class="p-reg-detail__champ-txt">kog'Maw</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-malzahar.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-malzahar.png" alt="champ-malzahar">
+									<p class="p-reg-detail__champ-txt">malzahar</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-reksai.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-reksai.png" alt="champ-reksai">
+									<p class="p-reg-detail__champ-txt">rek'Sai</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-velkoz.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-velkoz.png" alt="champ-velkoz">
+									<p class="p-reg-detail__champ-txt">vel'Koz</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img
+									src="../assets/images/bandle-logo.png" alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img
+									src="../assets/images/bilge-logo.png" alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img
+									src="../assets/images/demacia-logo.png" alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img
+									src="../assets/images/ionia-logo.png" alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img
+									src="../assets/images/ixtal-logo.png" alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img
+									src="../assets/images/noxus-logo.png" alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img
+									src="../assets/images/shadow-logo.png" alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img
+									src="../assets/images/shurima-logo.png" alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img
+									src="../assets/images/targon-logo.png" alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img src="../assets/images/frel-logo.png"
+									alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img src="../assets/images/zaun-logo.png"
+									alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Ixtal</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-ixtal-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/ixtal-symbol.png" alt="ixtal-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>Ixtal</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"Those who find Ixtal do not live to speak of it."<span>-
+								Qiyana</span></p>
+						<p class="p-reg-detail__bio">
+							Renowned for its mastery of elemental magic, Ixtal was one of the first independent nations
+							to join the Shuriman empire. In truth, Ixtali culture is much older. Now, secluded deep in
+							the jungle for thousands of years, the sophisticated arcology-city of Ixaocan remains mostly
+							free of outside influence. Having witnessed from afar the ruination of the Blessed Isles and
+							the Rune Wars that followed, the Ixtali view all the other factions of Runeterra as upstarts
+							and pretenders, and use their powerful magic to keep any intruders at bay.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of Ixtal</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"
+								style="background: url(../assets/images/vision-ixtal01.png) no-repeat; background-size: cover; background-position: center;">
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"
+								style="background: url(../assets/images/vision-ixtal02.png) no-repeat; background-size: cover; background-position: center;">
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"
+								style="background: url(../assets/images/vision-ixtal03.png) no-repeat; background-size: cover; background-position: center;">
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"
+								style="background: url(../assets/images/vision-ixtal04.png) no-repeat; background-size: cover; background-position: center;">
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"
+								style="background: url(../assets/images/vision-ixtal05.png) no-repeat; background-size: cover; background-position: center;">
+							</div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ixtal01.png" alt="vision-ixtal01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>An Unexplored Frontier</p>
+								<span>Very little is known of Ixtal’s history by those outside its borders. Indeed,
+									over the years, countless expeditions—from Noxus, Bilgewater, and more recently
+									the Piltover Explorers Guild—have delved into the jungle in search of arcane
+									treasures or new territorial claims... only to vanish without a trace.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ixtal02.png" alt="vision-ixtal02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Ixaocan</p>
+								<span>In truth, Ixtal is not the uninhabited wilderness many imagine. Far from
+									prying eyes and greedy hands, the sprawling arcologies of Ixaocan remain safely
+									hidden by the deepest rainforests. The cardinal arcology, seat of the ruling Yun
+									Tal caste, has stood since before the ancient Shurimans raised their first Sun
+									Disc.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ixtal03.png" alt="vision-ixtal03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Mastery Over The Material Realm</p>
+								<span>The arcologies are connected by intersecting lines of power, and each
+									represents a specific form or discipline of elemental magic. The largest are
+									home to tens of thousands of Ixtali practitioners, with a social hierarchy based
+									on the length of time spent in study, furthering their progression toward
+									ultimate mastery.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ixtal04.png" alt="vision-ixtal04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Esoteric Knowledge</p>
+								<span>The further one travels from the cardinal arcology, the more specialized and
+									prestigious the masteries become. High in the mountains, the mages of this
+									relatively small arcology combine their understandings of fire, rock, and
+									magnetism to draw precious metals from the earth, crafting them into exquisite
+									shapes with the merest gesture.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ixtal05.png" alt="vision-ixtal05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Elemental Drakes</p>
+								<span>Curiously, the abandoned ruins scattered throughout Ixtal are home to a
+									surprising number of dragons. These terrifying creatures have not fought
+									alongside mortals since the last days of Shurima’s war against the Void—now, for
+									the most part, they seem content just to be left alone.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in Ixtal</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-qiyana.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-qiyana.png" alt="champ-qiyana">
+									<p class="p-reg-detail__champ-txt">qiyana</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-neeko.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-neeko.png" alt="champ-neeko">
+									<p class="p-reg-detail__champ-txt">neeko</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-nid.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-nid.png" alt="champ-nid">
+									<p class="p-reg-detail__champ-txt">nidalee</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-rengar.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-rengar.png" alt="champ-rengar">
+									<p class="p-reg-detail__champ-txt">rengar</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-zyra.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-zyra.png" alt="champ-zyra">
+									<p class="p-reg-detail__champ-txt">zyra</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-mal.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-mal.png" alt="champ-mal">
+									<p class="p-reg-detail__champ-txt">malphite</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img
+									src="../assets/images/bandle-logo.png" alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img
+									src="../assets/images/bilge-logo.png" alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img
+									src="../assets/images/demacia-logo.png" alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img
+									src="../assets/images/ionia-logo.png" alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img
+									src="../assets/images/noxus-logo.png" alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img
+									src="../assets/images/shadow-logo.png" alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img
+									src="../assets/images/shurima-logo.png" alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img
+									src="../assets/images/targon-logo.png" alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img
+									src="../assets/images/frel-logo.png" alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img
+									src="../assets/images/void-logo.png" alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img
+									src="../assets/images/zaun-logo.png" alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a class="active" href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

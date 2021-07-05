@@ -1,0 +1,1323 @@
+.p-about {
+    color: $color1;
+    margin-bottom: 100px;
+    @include max(1024px) {
+        margin-bottom: 80px;
+    }
+    @include max(767px) {
+        margin-bottom: 60px;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__box {
+        line-height: 1.75;                
+        position: relative;
+        padding: 25px;
+        text-align: justify;
+        text-align-last: left;
+        @include max(767px) {
+            padding: 0;
+        }
+        &:before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: url(../../assets/images/border.png) no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include max(767px) {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: url(../../assets/images/border.png) no-repeat;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: scale(-1);
+            @include max(767px) {
+                display: none;
+            }
+        }
+    }  
+    &__des {
+        padding: 25px 0;
+        position: relative;
+        @include max(768px) {
+            padding: 0 15px 15px;
+        }
+        @include max(767px) {
+            padding: 0;
+            font-size: 14px;
+        }
+        span {
+            font-family: 'Playball', cursive;
+            font-size: 32px;
+            letter-spacing: 1px;
+            color: $color3;
+            @include max(767px) {
+                font-size: 28px;
+            }
+        }
+        &:before {
+            content: '';
+            width: 25%;
+            height: 2px;
+            background-color: $color3;
+            position: absolute;
+            top: 0;
+            right: -25px;
+            @include max(767px) {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            width: 25%;
+            height: 2px;
+            background-color: $color3;
+            position: absolute;
+            bottom: 0;
+            left: -25px;
+            @include max(767px) {
+                display: none;
+            }
+        }
+    }              
+    &__video {
+        @include flex-jcenter;
+        align-items: center;
+        margin-top: 25px;
+        position: relative;
+        video {
+            max-width: 65%;
+            @include max(767px) {
+                max-width: 100%;
+            }
+        }
+    } 
+    &__left, &__right {
+        position: absolute;
+        bottom: 0;
+        width: 17.5%;
+        max-width: 220px;
+        @include max(767px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__left {
+        left: 0;
+    }
+    &__right {
+        right: 0;
+    }        
+}
+.p-cine {
+    color: $color1;
+    margin-bottom: 165px;
+    @include max(1024px) {
+        margin-bottom: 145px;
+    }
+    @include max(767px) {
+        margin-bottom: 125px;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__list {
+        @include flex-jbetween;
+        @include max(1024px) {
+            @include flex-jcenter;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+            width: calc(100% + 20px);
+        }
+    }
+    &__item {
+        width: calc(100% / 7 - 15px);
+        text-align: justify;
+        text-align-last: center;
+        font-weight: 500;
+        padding: 7px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        @include max(1024px) {
+            width: calc(25% - 20px);
+            margin: 0 10px 20px;
+        }
+        @include max(768px) {
+            width: calc(100% / 3 - 20px);
+        }
+        @include max(767px) {
+            width: calc(50% - 20px);
+        }
+        img {
+            width: 100%;
+            border: 1px solid $color1;
+            @include max(768px) {
+                border: 2px solid $color1;
+            }
+        }
+        &:hover, &.active {
+            box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+        }
+        &.active {
+            p {
+                opacity: 1;
+            }
+        }
+        p {
+            width: 100%;
+            font-family: 'Playball', cursive;
+            font-size: 32px;
+            position: absolute;
+            left: 0;
+            bottom: -65px;
+            text-align: center;
+            opacity: 0;
+            color: $color3;
+            @include max(767px) {
+                font-size: 28px;
+                bottom: -50px;
+            }
+        }
+    }
+    &__video {
+        @include flex-jcenter;
+        align-items: center;
+        margin-top: 40px;
+        position: relative;
+        @include max(768px) {
+            margin-top: 15px;
+        }
+        &--inner {
+            max-width: 65%;
+            @include max(768px) {
+                max-width: 100%;
+            }
+        }
+    }
+    &__left, &__right {
+        position: absolute;
+        bottom: 0;
+        width: 17.5%;
+        max-width: 220px;
+        @include max(768px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__left {
+        left: 0;
+    }
+    &__right {
+        right: 0;
+    }
+}
+.p-reg { 
+    color: $color1; 
+    margin-bottom: 80px;
+    @include max(1024px) {
+        margin-bottom: 60px;
+    }
+    @include max(767px) {
+        margin-bottom: 40px;
+    }      
+    &__list {
+        @include flex-center;
+        align-content: space-between;
+        position: relative;
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+        z-index: 3; 
+    }
+    &__item {
+        @include flex-jcenter;
+        overflow: hidden;
+        width: calc(25% - 20px);
+        margin: 0 10px 20px;
+        position: relative;   
+        transition: all 0.3s ease;
+        cursor: pointer;
+        @include max(1024px) {
+            width: calc(100% / 3 - 20px);
+        }
+        @include max(768px) {
+            width: calc(50% - 20px);
+        }
+        @include max(767px) {
+            width: 100%;
+        }
+        a {
+            @include flex-jcenter;
+            width: 100%;
+            text-decoration: none;  
+            position: relative;   
+            padding: 7px;
+            color: $color1;
+            @include max(768px) {
+                padding: 10px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                right: 7px;
+                bottom: 7px;
+                border: 1px solid $color1;
+                z-index: 3;
+                @include max(768px) {
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                    border: 2px solid $color1;
+                }
+            }
+            video {
+                position: relative;
+                width: 100%;
+                z-index: 1;
+            }   
+            img {
+                left: 50%;
+                top: 25%;
+                transform: translateX(-50%);
+                height: 60px;
+                transition: all 0.3s ease;
+                z-index: 3;
+                position: absolute;
+                margin-bottom: 10px;
+                @include max(768px) {
+                    height: 70px;
+                }
+            }        
+        }
+        &:hover {
+            box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+            p {
+                text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+            }
+            img {
+                -webkit-filter: drop-shadow(0px 0px 3px $color3) drop-shadow(0px 0px 7px $color3);
+                filter: drop-shadow(0px 0px 3 px $color3) drop-shadow(0px 0px 7px $color3);
+            }
+        }      
+    } 
+    &__txt {
+        width: calc(100% - 14px);
+        bottom: 15px;
+        font-family: 'Playball', cursive;
+        font-size: 24px;
+        letter-spacing: 1px;
+        position: absolute;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 3;
+        @include max(768px) {
+            font-size: 28px;
+            bottom: 20px;
+        }
+    }  
+}     
+.p-champ { 
+    color: $color1;   
+    margin-bottom: 80px;
+    @include max(1024px) {
+        margin-bottom: 60px;
+    }
+    @include max(767px) {
+        margin-bottom: 40px;
+    } 
+    &__list {
+        @include flex-jcenter;
+        flex-wrap: wrap;  
+        width: calc(100% + 20px);
+        margin: 0 -10px;  
+        position: relative; 
+    }  
+    &__item {
+        margin: 0 10px 20px;
+        width: calc(25% - 20px);
+        cursor: pointer; 
+        position: relative; 
+        @include max(1024px) {
+            width: calc(100% / 3 - 20px);
+        }
+        @include max(768px) {
+            width: calc(50% - 20px);
+        }
+        @include max(767px) {
+            width: 100%;
+        } 
+        a {                        
+            @include flex-jcenter;
+            text-decoration: none;  
+            position: relative;   
+            padding: 7px;
+            color: $color1;
+            @include max(768px) {
+                padding: 10px;
+            }
+            &:before {
+                content: '';    
+                width: calc(100% - 16px);
+                height: calc(100% - 16px);   
+                background-image: linear-gradient(to top, rgba($color: #000, $alpha: 1), rgba($color: #000, $alpha: 0) 50%);
+                background-size: contain;                
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                z-index: 1;
+                @include max(768px) {
+                    width: calc(100% - 24px);
+                    height: calc(100% - 24px);  
+                    top: 12px;
+                    left: 12px;
+                }
+            }          
+            img {
+                width: 100%;
+                border: 1px solid $color1;
+                @include max(768px) {
+                    border: 2px solid $color1;
+                }
+            } 
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+                p {
+                    text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+                }
+            }                  
+        }
+    }
+    &__txt {
+        font-family: 'Playball', cursive;
+        font-size: 24px;
+        letter-spacing: 1px;
+        width: calc(100% - 14px);
+        text-align: center;
+        text-transform: capitalize;
+        position: absolute;
+        bottom: 15px;
+        transition: all .3s ease;                          
+        z-index: 3;
+        @include max(768px) {
+            font-size: 28px;
+            bottom: 20px;
+        }
+    }   
+}  
+.p-skin {
+    color: $color1;
+    margin-bottom: 80px; 
+    @include max(1024px) {
+        margin-bottom: 60px;
+    }
+    @include max(767px) {
+        margin-bottom: 40px;
+    } 
+    &__list {
+        @include flex-jcenter;
+        flex-wrap: wrap;  
+        width: calc(100% + 20px);
+        margin: 0 -10px;  
+        position: relative; 
+    }  
+    &__item {
+        margin: 0 10px 20px;
+        width: calc(25% - 20px);
+        cursor: pointer; 
+        position: relative; 
+        @include max(1024px) {
+            width: calc(100% / 3 - 20px);
+        }
+        @include max(768px) {
+            width: calc(50% - 20px);
+        }
+        @include max(767px) {
+            width: 100%;
+        }     
+        a {                        
+            @include flex-jcenter;
+            text-decoration: none;  
+            position: relative;   
+            padding: 7px;
+            color: $color1;
+            @include max(768px) {
+                padding: 10px;
+            }
+            &:before {
+                content: '';    
+                width: calc(100% - 16px);
+                height: calc(100% - 16px);   
+                background-image: linear-gradient(to top, rgba($color: #000, $alpha: 1), rgba($color: #000, $alpha: 0) 50%);
+                background-size: contain;                
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                z-index: 1;
+                @include max(768px) {
+                    width: calc(100% - 24px);
+                    height: calc(100% - 24px);  
+                    top: 12px;
+                    left: 12px;
+                }
+            }          
+            img {
+                width: 100%;
+                border: 1px solid $color1;
+                @include max(768px) {
+                    border: 2px solid $color1;
+                }
+            } 
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+                p {
+                    text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+                }
+            }                  
+        }
+    }
+    &__txt {
+        font-family: 'Playball', cursive;
+        font-size: 24px;
+        letter-spacing: 1px;
+        width: calc(100% - 14px);
+        text-align: center;
+        text-transform: capitalize;
+        position: absolute;
+        bottom: 15px;
+        transition: all .3s ease;                          
+        z-index: 3;
+        @include max(768px) {
+            font-size: 28px;
+            bottom: 20px;
+        }
+    }    
+}
+.p-reg-detail {
+    color: $color1;
+    margin: 0 0 100px;
+    @include max(1024px) {
+        margin: 0 0 80px;
+    }
+    @include max(768px) {
+        margin: 0 0 40px;
+    }
+    &__symbol { 
+        max-width: 150px;
+        margin: 0 auto; 
+        @include max(767px) {
+            max-width: 120px;
+        }                     
+        img {
+            width: 100%;
+            -webkit-filter: drop-shadow(0px 0px 3px $color1) drop-shadow(0px 0px 3px $color3);
+            filter: drop-shadow(0px 0px 3px $color1) drop-shadow(0px 0px 3px $color3);
+        }
+    }
+    &__about {
+        @include flex-jbetween;
+        flex-direction: column;
+        margin: 0 auto 50px;
+        position: relative;
+        max-width: 960px;
+        @include max(767px) {
+            margin: 0 auto 30px;
+        }   
+    }
+    &__voice {
+        width: 100%;
+        font-size: 20px;
+        color: $color3;
+        margin-bottom: 10px;
+        line-height: 1.75;
+        @include max(767px) {
+            font-size: 18px;
+            line-height: 1.5;
+        }   
+    }
+    &__bio {
+        line-height: 1.75;
+        text-align: justify;
+        @include max(767px) {
+            font-size: 14px;
+        }   
+    }
+    &__vision {
+        margin: 0 0 50px;
+        position: relative; 
+        @include max(767px) {
+            margin: 0 0 30px;
+        } 
+    }
+    &__vision-list {
+        @include flex-jcenter;
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+        @include max(768px) {
+            flex-wrap: wrap;
+        }  
+        @include max(767px) {
+            width: 100%;
+            margin: 0;
+        } 
+        &--item {
+            @include flex-icenter;
+            justify-content: center;
+            margin: 0 10px 20px;
+            width: 100%;
+            max-height: 150px;
+            cursor: pointer;    
+            transition: all 0.3s ease;
+            z-index: 3; 
+            overflow: hidden; 
+            padding: 7px;
+            @include max(768px) {
+                width: calc(50% - 20px);
+            }
+            @include max(767px) {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+            } 
+        }
+        &--img {
+            width: 100%;
+            height: 134px;
+            border: 1px solid $color1;
+        }
+    }
+    &__vision-inner {
+        position: relative;
+        &--item {
+            max-width: 80%;
+            margin: 13px auto 0;
+            @include max(768px) {
+                max-width: 100%;
+                margin: 0 0 40px;
+            }
+        }
+        &--img {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                border: 1px solid rgba($color: $color1, $alpha: 0.5);
+                z-index: 3;
+                @include max(768px) {
+                    top: 15px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 15px;
+                }
+                @include max(767px) {
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+        &--txt {
+            color: $color1;
+            text-align: justify;
+            text-align-last: center;
+            p {
+                font-family: 'Playball', cursive;
+                font-size: 32px;
+                color: $color3;
+                padding: 25px 0 10px;
+                @include max(768px) {
+                    padding: 15px 0 10px;
+                }
+                @include max(767px) {
+                    font-size: 28px;
+                    padding: 10px 0 5px;
+                }
+            }
+            span {
+                line-height: 1.75;
+                @include max(767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__champ {
+        margin-bottom: 45px;
+        position: relative;
+        @include max(767px) {
+            margin: 0 0 10px;
+        } 
+    }
+    &__champ-list {
+        @include flex-jcenter;
+        flex-wrap: wrap;  
+        width: calc(100% + 20px);
+        margin: 0 -10px; 
+        @include max(767px) {
+            width: 100%;
+            margin: 0; 
+        }   
+    } 
+    &__champ-item {
+        margin: 0 10px 20px;
+        width: calc(100% / 5 - 20px);
+        cursor: pointer;
+        @include max(1024px) {
+            width: calc(100% / 4 - 20px);
+        } 
+        @include max(768px) {
+            width: calc(100% / 3 - 20px);
+        } 
+        @include max(767px) {
+            width: 100%;
+            margin: 0 0 20px;
+        } 
+        a {                        
+            @include flex-jcenter;
+            text-decoration: none;  
+            position: relative;   
+            padding: 7px;
+            color: $color1;
+            @include max(768px) {
+                padding: 10px;
+            }
+            &:before {
+                content: '';    
+                width: calc(100% - 16px);
+                height: calc(100% - 16px);   
+                background-image: linear-gradient(to top, rgba($color: #000, $alpha: 1), rgba($color: #000, $alpha: 0) 50%);
+                background-size: contain;                
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                z-index: 1;
+                @include max(768px) {
+                    width: calc(100% - 24px);
+                    height: calc(100% - 24px);  
+                    top: 12px;
+                    left: 12px;
+                }
+            }          
+            img {
+                width: 100%;
+                border: 1px solid $color1;
+                @include max(768px) {
+                    border: 2px solid $color1;
+                }
+            } 
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+                p {
+                    text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+                }
+            }   
+        }  
+    }
+    &__champ-txt {
+        font-family: 'Playball', cursive;
+        font-size: 20px;
+        letter-spacing: 1px;
+        width: calc(100% - 14px);
+        text-align: justify;
+        text-align-last: center;
+        text-transform: capitalize;
+        position: absolute;
+        bottom: 10px; 
+        transition: all .3s ease;                          
+        z-index: 3;
+        @include max(768px) {
+            bottom: 15px;
+        }
+        @include max(767px) {
+            font-size: 24px;
+            bottom: 20px;
+        }
+    }  
+    &__other {
+        position: relative; 
+        @include max(767px) {
+            margin: 0 0 10px;
+        }    
+    }
+    &__other-list {
+        @include flex-jbetween;
+        width: calc(100% + 20px);
+        margin: 0 -10px;  
+        transition: all 0.3s ease;  
+        @include max(1024px) {
+            flex-wrap: wrap;
+        }   
+    }
+    &__other-item {
+        margin: 0 10px;
+        width: calc(100% / 6 - 20px);
+        cursor: pointer;                          
+        position: relative;  
+        padding: 7px;
+        transition: all 0.3s ease;  
+        @include max(1024px) {
+            margin: 0 5px;
+        } 
+        @include max(768px) {
+            margin: 0 5px 20px;
+        }  
+        @include max(767px) {
+            width: calc(100% / 4 - 10px);
+            margin: 0 5px 10px;
+        }      
+        img {
+            width: 100%;
+            border: 1px solid $color1;
+        } 
+        &:hover, &.active {
+            box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+        }  
+    }
+}  
+.p-champ-detail {
+    color: $color1;
+    position: relative;
+    margin: 0 0 100px;
+    @include max(1024px) {
+        margin: 0 0 80px;
+    }
+    @include max(768px) {
+        margin: 0 0 35px;
+    } 
+    &__intro {
+        @include flex-jbetween;
+        flex-direction: column;
+    }  
+    &__about {
+        @include flex-jbetween;
+        padding: 50px 100px;
+        position: relative;
+        @include max(1024px) {
+            padding: 40px 0;
+        } 
+        @include max(767px) {
+            flex-direction: column;
+            padding: 30px 0;
+        } 
+    }    
+    &__role {
+        margin: 0 50px 0 0;
+        @include max(767px) {
+            margin: 0;
+            text-align: center;
+        } 
+        img {
+            height: 100px;
+            padding: 10px 0 0 0;
+            @include max(767px) {
+               height: 75px;
+               padding: 0;
+            } 
+        }
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 20px 0 0 0;
+            color: $color3;
+            font-weight: 500;
+            @include max(767px) {
+               font-size: 20px;
+               margin: 10px 0 20px 0;
+            } 
+        }
+    }
+    &__bio {
+        text-align: justify;
+        text-align-last: left;
+        p {
+            font-family: 'Playball', cursive;
+            font-size: 28px;
+            color: $color3;
+            @include max(767px) {
+               font-size: 24px;
+               margin: 0 0 10px 0;
+            } 
+        }
+        span {
+            line-height: 1.75;
+            @include max(767px) {
+               font-size: 14px;
+            } 
+        }
+    }
+    &__screenshot {
+        text-align: justify;
+        text-align-last: center;
+        margin-bottom: 70px;
+        @include max(1024px) {
+            margin: 0 0 60px;
+        }
+        @include max(768px) {
+            margin: 0 0 50px;
+        } 
+        @include max(767px) {
+            margin: 0 0 40px;
+        } 
+        img {
+            @include max(1024px) {
+                width: 100%;
+            } 
+        }
+    }           
+    &__ability {
+        position: relative;
+        min-height: 365px;
+        @include max(1024px) {
+            min-height: 330px;
+        } 
+        @include max(768px) {
+            @include flex-jbetween;
+            flex-wrap: wrap;
+        } 
+    } 
+    &__ability-list {
+        @include flex-jstart; 
+        max-width: 1005px;
+        width: 65%;
+        position: relative;
+        @include max(768px) {
+            @include flex-jbetween;
+            flex-direction: column;
+            width: 80px;
+        } 
+        &--item {
+            width: 80px;
+            height: 80px;
+            margin: 0 25px 0 0;
+            padding: 7px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            @include max(768px) {
+                padding: 0;
+            } 
+            img {
+                width: 100%;
+                height: 100%;
+                border: 1px solid $color1;
+            }
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+            }
+        }
+    } 
+    &__ability-txt {
+        margin: 25px 0 0 0;
+        max-width: 1005px;
+        width: 65%;
+        padding: 0 25px 0 0;
+        @include max(1024px) {
+            width: 60%;
+        } 
+        @include max(768px) {
+            flex-direction: column;
+            width: calc(100% - 105px);
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            text-align-last: left;    
+        } 
+        &--item {
+            p {
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 500;
+                color: $color3;
+            }
+            span {
+                line-height: 1.75;
+                text-align: justify;
+            }
+            @include max(768px) {
+                margin: 0 0 25px 0;
+            }
+        }
+    } 
+    &__ability-vid {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 35%;
+        max-width: 500px;
+        @include max(1024px) {
+            width: 40%;
+        } 
+        &--item {
+            overflow: hidden;
+            position: relative;                        
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 14px;
+                border: 1px solid rgba($color: $color1, $alpha: 0.5);
+                z-index: 3;
+            }
+            video, img {
+                width: 100%;
+            }
+        }
+    }
+    &__ability-box {
+        &--item {
+            @include flex-jbetween;
+            width: 100%;
+            margin: 0 0 25px 0;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+            border: 1px solid $color1;
+            margin: 0 25px 0 0;
+            @include max(767px) {
+               width: 60px;
+               height: 60px;
+               margin: 0 20px 0 0;
+            } 
+        }
+        &--txt {
+            width: 100%;
+            text-align: justify;
+            text-align-last: left;   
+            p {
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1;
+                color: $color3;
+                @include max(767px) {
+                    font-size: 16px;
+                 } 
+            }
+            span {
+                line-height: 1.75;
+                text-align: justify;
+                @include max(767px) {
+                    font-size: 14px;
+                 } 
+            }
+        }
+    }
+    &__skin {
+        @include flex-jbetween;
+        flex-wrap: wrap;
+        position: relative;    
+        margin: 70px 0 0;   
+        @include max(1024px) {
+            margin: 60px 0 0;
+        }
+        @include max(768px) {
+            margin: 25px 0 0;
+        }   
+        @include max(767px) {
+            margin: 15px 0 0;
+        }    
+    }         
+    &__skin-inner  {
+        max-width: 1005px;
+        width: calc(65% - 25px);
+        margin: 0 25px 0 0;
+        @include max(1024px) {
+            width: calc(60% - 25px);
+        }
+        @include max(768px) {
+            @include flex-jbetween;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0;
+        }
+        &--item {
+            width: 100%;
+            position: relative;
+            @include max(768px) {
+                width: calc(50% - 12.5px);
+                margin: 0 0 25px;
+            }
+            @include max(767px) {
+                width: 100%;
+            }
+            &:before {
+                content: '';    
+                width: 100%;
+                height: 100%;    
+                background-image: linear-gradient(to top, rgba($color: #000, $alpha: 1), rgba($color: #000, $alpha: 0) 50%);
+                background-size: contain;                
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+            }  
+            &:after {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                border: 1px solid rgba($color: $color1, $alpha: 0.5);
+                z-index: 3;
+                @include max(768px) {
+                    top: 15px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 15px;
+                }
+                @include max(767px) {
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }       
+            img {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+                position: absolute;
+                bottom: 25px;
+                text-align: center;
+                font-family: 'Playball', cursive;
+                font-size: 28px;
+                text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+                z-index: 3;
+                @include max(768px) {
+                    font-size: 24px;
+                    bottom: 20px;
+                }
+            }
+        }
+    } 
+    &__skin-list {
+        @include flex-jbetween;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 35%;
+        max-width: 500px;
+        @include max(1024px) {
+            width: 40%;
+        }
+        &--item {
+            width: calc(100% / 3 - 15px);
+            overflow: hidden;
+            cursor: pointer;
+            padding: 7px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            img {
+                width: 100%;
+                border: 1px solid $color1;
+            }
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+            }
+        }
+    }        
+}  
+.p-skin-detail { 
+    color: $color1;   
+    margin: 0 0 90px;
+    @include max(1024px) {
+        margin: 0 0 70px;
+    }
+    @include max(768px) {
+        margin: 0 0 50px;
+    }      
+    &__about {
+        padding: 0 0 55px;
+        margin: -20px auto 0;
+        max-width: 960px;
+        width: 80%;
+        text-align: justify;
+        text-align-last: center;
+        line-height: 1.75;
+        @include max(1024px) {
+            width: 90%;
+            padding: 0 0 40px;
+        }
+        @include max(768px) {
+            width: 100%;
+            padding: 0 0 40px;
+        }
+        @include max(767px) {
+            font-size: 14px;
+        }
+    }
+    .skin-group {
+        @include flex-jcenter;
+        width: calc(100% + 20px);
+        margin: 0 -10px 26px;  
+        &__tab {
+            position: relative;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            font-family: 'Playball', cursive;
+            font-size: 24px;
+            padding: 15px 40px;
+            margin: 0 10px;
+            color: $color1;
+            transition: all 0.3s ease;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                right: 7px;
+                bottom: 7px;                        
+                border: 1px solid $color1;
+            }
+            &:hover, &.active {
+                text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+            }
+        }
+    }      
+    &__box {
+        position: relative;
+    }
+    &__box-list {
+        @include flex-jcenter;
+        flex-wrap: wrap;
+        width: calc(100% + 20px);
+        margin: 0 -10px;  
+        &--item {
+            margin: 0 10px;
+            width: calc(100% / 8 - 20px);
+            cursor: pointer;                          
+            position: relative;  
+            padding: 7px;
+            transition: all 0.3s ease;    
+            margin-bottom: 20px; 
+            @include max(1024px) {
+                width: calc(100% / 6 - 20px);
+            }  
+            img {
+                width: 100%;
+                border: 1px solid $color1;
+            } 
+            &:hover, &.active {
+                box-shadow: 0px 3px 5px rgba($color: $color1, $alpha: 0.7), 0px -3px 5px rgba($color: $color1, $alpha: 0.7), 3px 0px 5px rgba($color: $color1, $alpha: 0.7), -3px 0px 5px rgba($color: $color1, $alpha: 0.7);
+            }   
+        }
+    }
+    &__box-inner {
+        position: relative;
+        &--item {
+            width: 65%;
+            margin: 13px auto 0;
+            @include max(768px) {
+                width: 100%;
+                margin: 0 0 40px;
+            }
+        }
+        &--img {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                border: 1px solid rgba($color: $color1, $alpha: 0.5);
+                z-index: 3;
+                @include max(768px) {
+                    top: 15px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 15px;
+                }
+                @include max(767px) {
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+        &--txt {
+            color: $color1;
+            text-align: justify;
+            text-align-last: center;
+            p {
+                font-family: 'Playball', cursive;
+                font-size: 32px;
+                color: $color3;
+                padding: 25px 0 10px;
+                @include max(768px) {
+                    padding: 15px 0 10px;
+                }
+                @include max(767px) {
+                    font-size: 28px;
+                    padding: 10px 0 5px;
+                }
+            }
+            span {
+                line-height: 1.75;
+                @include max(767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__left, &__right {
+        position: absolute;
+        top: 230px;
+        width: 17.5%;
+        max-width: 220px;
+        @include max(1200px) {
+            top: 210px;
+        }
+        @include max(1024px) {
+            top: 180px;
+        }
+        @include max(768px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__left {
+        left: 0;
+    }
+    &__right {
+        right: 0;
+    }
+} 

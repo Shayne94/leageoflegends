@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Welcome To My Worlds</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-frel-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/frel-symbol.png" alt="frel-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>The Freljord</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"The Freljord is a place for building, fighting, and eating. Home sweet
+							home."<span>- Ornn</span></p>
+						<p class="p-reg-detail__bio">
+							Many thousands of years ago, the alliance between the sisters Avarosa, Serylda, and
+							Lissandra was shattered in a war, unknowingly threatened all of Runeterra, plunging the
+							northern lands into chaos, and near-constant winter. The raiders of the Winter’s Claw range
+							further with each passing year, harrying the borders of Demacia to the south, and the
+							frontiers of Noxus to the east. Finally, seeking a more peaceful future, the fractious
+							independent tribes and clans have begun to offer their allegiance to Ashe, young queen of
+							the Avarosans.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of The Freljord</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-frel01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-frel02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-frel03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-frel04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-frel05.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-frel01.png" alt="vision-frel01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Warded Gateway to The Howling Abyss</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-frel02.png" alt="vision-frel02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Vaults of The Iceborn Beneath Frosthorn Peak</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-frel03.png" alt="vision-frel03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Pilgrim Site of Rakelstake</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-frel04.png" alt="vision-frel04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Ice-locked Harbor of Glaserport, With Its Chained Wolfships</p>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-frel05.png" alt="vision-frel05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Frozen Caverns of The Howling Abyss</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in The Freljord</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-ashe.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-ashe.png" alt="champ-ashe">
+									<p class="p-reg-detail__champ-txt">ashe</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-liss.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-liss.png" alt="champ-liss">
+									<p class="p-reg-detail__champ-txt">lissandra</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-seju.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-seju.png" alt="champ-seju">
+									<p class="p-reg-detail__champ-txt">sejuani</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-gnar.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-gnar.png" alt="champ-gnar">
+									<p class="p-reg-detail__champ-txt">gnar</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-gragas.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-gragas.png" alt="champ-gragas">
+									<p class="p-reg-detail__champ-txt">gragas</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-tryn.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-tryn.png" alt="champ-tryn">
+									<p class="p-reg-detail__champ-txt">tryndamere</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-braum.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-braum.png" alt="champ-braum">
+									<p class="p-reg-detail__champ-txt">braum</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-nunu.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-nunu.png" alt="champ-nunu">
+									<p class="p-reg-detail__champ-txt">nunu & willump</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-olaf.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-olaf.png" alt="champ-olaf">
+									<p class="p-reg-detail__champ-txt">olaf</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-anivia.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-anivia.png" alt="champ-anivia">
+									<p class="p-reg-detail__champ-txt">anivia</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-trundle.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-trundle.png" alt="champ-trundle">
+									<p class="p-reg-detail__champ-txt">trundle</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-udyr.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-udyr.png" alt="champ-udyr">
+									<p class="p-reg-detail__champ-txt">udyr</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-voli.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-voli.png" alt="champ-voli">
+									<p class="p-reg-detail__champ-txt">volibear</p>
+								</div>
+							</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-ornn.html">
+								<div class="reg-champ__item--inner">
+									<img src="../assets/images/champ-ornn.png" alt="champ-ornn">
+									<p class="p-reg-detail__champ-txt">ornn</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img
+									src="../assets/images/bandle-logo.png" alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img
+									src="../assets/images/bilge-logo.png" alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img
+									src="../assets/images/demacia-logo.png" alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img
+									src="../assets/images/ionia-logo.png" alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img
+									src="../assets/images/ixtal-logo.png" alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img
+									src="../assets/images/noxus-logo.png" alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img
+									src="../assets/images/shadow-logo.png" alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img
+									src="../assets/images/shurima-logo.png" alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img
+									src="../assets/images/targon-logo.png" alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img src="../assets/images/void-logo.png"
+									alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img src="../assets/images/zaun-logo.png"
+									alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

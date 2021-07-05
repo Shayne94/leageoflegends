@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Ionia</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-ionia-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/ionia-symbol.png" alt="ionia-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>Ionia</span>
+					</div>
+					<div class="reg-detail__about">
+						<p class="p-reg-detail__voice">"We are the children of the First Lands, and we will not be slaves!"<span>- Irelia</span></p>
+						<p class="p-reg-detail__bio">
+							Surrounded by treacherous seas, Ionia is composed of a number of allied provinces scattered
+							across a massive archipelago, known to many as the First Lands. For many centuries most
+							Ionians led lives of plenty. The warrior monasteries, provincial militias—and even Ionia
+							itself—had been enough to protect them...But that ended twelve years ago, when Noxus
+							attacked the First Lands. The empire’s seemingly endless warhosts savaged Ionia, and were
+							only defeated after many years, and at great cost.</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of Ionia</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-ionia01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-ionia02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-ionia03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-ionia04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-ionia05.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ionia01.png" alt="vision-ionia01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The First Lands</p>
+									<span>Magic suffuses every part of Ionia—its people, its history, and most of all the land itself. All aspects of life there hang in a balance, with still so much left to be discovered and explored. Those who call this vast continent home strive to find harmony among the diverse races and habitats, far older than most others on Runeterra.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ionia02.png" alt="vision-ionia02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Life As One</p>
+									<span>he people of Ionia’s many provinces have always seen themselves as part of the natural world, and adapted their ways to live alongside all manner of fantastical flora and fauna. To outsiders, such a close relationship may appear strange, but it is through this interdependence that both the land and its inhabitants have thrived for countless generations.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ionia03.png" alt="vision-ionia03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>An Ancient and Respected History</p>
+									<span>It is certain Ionia has a much longer and richer history than any living soul could claim to know. Indeed, in the more remote mountain passes, the landscape is still littered with evidence of great wars from ages past—but instead of clearing the ruins, the Ionians choose to respect what remains, even if they no longer fully understand what it represents.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ionia04.png" alt="vision-ionia04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Great Monasteries</p>
+								<span>Though the birthplace of many specialized forms of martial arts, Ionia maintains no standing armies. Rather, the ways of battle are tied to differing philosophies, passed on with reverence and care. In the northeastern mountains, the monastery of Hirana has long been a sanctuary for those seeking to better understand their connection to the spirit realm.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-ionia05.png" alt="vision-ionia05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Placidium of Navori</p>
+									<span>Situated at the heart of the continent, the Placidium is one of Ionia’s most sacred places. Many have journeyed here to study at renowned schools, or meditate in its wild, magical gardens. Undoubtedly, this was why it became such a tempting target for the invading armies of Noxus...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in Ionia</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-kayn.html">
+									<img src="../assets/images/champ-kayn.png" alt="champ-kayn">
+									<p class="p-reg-detail__champ-txt">kayn</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-rakan.html">
+									<img src="../assets/images/champ-rakan.png" alt="champ-rakan">
+									<p class="p-reg-detail__champ-txt">rakan</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-xayah.html">
+									<img src="../assets/images/champ-xayah.png" alt="champ-xayah">
+									<p class="p-reg-detail__champ-txt">xayah</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-ahri.html">
+									<img src="../assets/images/champ-ahri.png" alt="champ-ahri">
+									<p class="p-reg-detail__champ-txt">ahri</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-akali.html">
+									<img src="../assets/images/champ-akali.png" alt="champ-akali">
+									<p class="p-reg-detail__champ-txt">akali</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-irelia.html">
+									<img src="../assets/images/champ-irelia.png" alt="champ-irelia">
+									<p class="p-reg-detail__champ-txt">irelia</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-jhin.html">
+									<img src="../assets/images/champ-jhin.png" alt="champ-jhin">
+									<p class="p-reg-detail__champ-txt">jhin</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-yasuo.html">
+									<img src="../assets/images/champ-yasuo.png" alt="champ-yasuo">
+									<p class="p-reg-detail__champ-txt">yasuo</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-karma.html">
+									<img src="../assets/images/champ-karma.png" alt="champ-karma">
+									<p class="p-reg-detail__champ-txt">karma</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-ivern.html">
+									<img src="../assets/images/champ-ivern.png" alt="champ-ivern">
+									<p class="p-reg-detail__champ-txt">ivern</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-kennen.html">
+									<img src="../assets/images/champ-kennen.png" alt="champ-kennen">
+									<p class="p-reg-detail__champ-txt">kennen</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-lee.html">
+									<img src="../assets/images/champ-lee.png" alt="champ-lee">
+									<p class="p-reg-detail__champ-txt">lee sin</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-lillia.html">
+									<img src="../assets/images/champ-lillia.png" alt="champ-lillia">
+									<p class="p-reg-detail__champ-txt">lillia</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-yi.html">
+									<img src="../assets/images/champ-yi.png" alt="champ-yi">
+									<p class="p-reg-detail__champ-txt">master yi</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-sett.html">
+									<img src="../assets/images/champ-sett.png" alt="champ-sett">
+									<p class="p-reg-detail__champ-txt">sett</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-shen.html">
+									<img src="../assets/images/champ-shen.png" alt="champ-shen">
+									<p class="p-reg-detail__champ-txt">shen</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-syndra.html">
+									<img src="../assets/images/champ-syndra.png" alt="champ-syndra">
+									<p class="p-reg-detail__champ-txt">syndra</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-varus.html">
+									<img src="../assets/images/champ-varus.png" alt="champ-varus">
+									<p class="p-reg-detail__champ-txt">varus</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-zed.html">
+									<img src="../assets/images/champ-zed.png" alt="champ-zed">
+									<p class="p-reg-detail__champ-txt">zed</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-yone.html">
+									<img src="../assets/images/champ-yone.png" alt="champ-yone">
+									<p class="p-reg-detail__champ-txt">yone</p>
+								</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img src="../assets/images/bandle-logo.png"
+									alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-bilge.html"><img src="../assets/images/bilge-logo.png"
+									alt="bilge-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img src="../assets/images/demacia-logo.png"
+									alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img src="../assets/images/ixtal-logo.png"
+									alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img src="../assets/images/noxus-logo.png"
+									alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img src="../assets/images/shadow-logo.png"
+									alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img src="../assets/images/shurima-logo.png"
+									alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img src="../assets/images/targon-logo.png"
+									alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img src="../assets/images/frel-logo.png"
+									alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img src="../assets/images/void-logo.png"
+									alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img src="../assets/images/zaun-logo.png"
+									alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a class="active" href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

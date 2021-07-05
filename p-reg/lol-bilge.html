@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Bilgewater</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<video autoplay muted loop>
+			<source src="../assets/images/reg-bilge-bg.webm" type="video/webm">
+		</video>
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-reg-detail">
+		<div class="l-container">
+			<div class="p-reg-detail__inner">
+				<div class="p-reg-detail__symbol">
+					<img src="../assets/images/bilge-symbol.png" alt="bilge-symbol">
+				</div>
+				<div class="p-reg-detail__intro">
+					<div class="c-title01">
+						<span>Bilgewater</span>
+					</div>
+					<div class="p-reg-detail__about">
+						<p class="p-reg-detail__voice">"Welcome to Bilgewater!"<span>- Gangplank</span></p>
+						<p class="p-reg-detail__bio">
+							Nestled away in the Blue Flame Isles archipelago, Bilgewater is a port city like no other -
+                home to serpent hunters, dock gangs, and smugglers from across the known world. Here,
+                fortunes are made and ambitions shattered in the blink of an eye. For those fleeing justice,
+                debt, or persecution, Bilgewater can be a place of new beginnings, for no one on these
+                twisted streets cares about your past. Even so, with each new dawn, careless travelers can
+                always be found floating in the harbor, their purses empty and their throats slit…</p>
+					</div>
+				</div>
+				<div class="p-reg-detail__vision">
+					<p class="c-title02">Visions of Bilgewater</p>
+					<div class="p-reg-detail__vision-list only-768">
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(1)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bilge01.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(2)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bilge02.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(3)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bilge03.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(4)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bilge04.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+						<div class="p-reg-detail__vision-list--item" onclick="currentSlide(5)">
+							<div class="p-reg-detail__vision-list--img"  style="background: url(../assets/images/vision-bilge05.png) no-repeat; background-size: cover; background-position: center;"></div>
+						</div>
+					</div>
+					<div class="p-reg-detail__vision-inner">
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bilge01.png" alt="vision-bilge01">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Bilgewater Bay</p>
+									<span>Surrounded by treacherous straits and towering cliffs, Bilgewater Bay is as dangerous as those who call it home. Visitors are often seduced by seemingly limitless opportunity, and become permanent residents—realizing that the longer they stay, the more they can exploit others for power and wealth.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bilge02.png" alt="vision-bilge02">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Ancient Architecture</p>
+								<span>Various settlements within the greater city have been built upon the remains of a far older civilization. Long abandoned temples have been converted into homes and places of business, with scaffold walkways leading from one establishment to another.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bilge03.png" alt="vision-bilge03">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>The Slaughter Docks</p>
+								<span>Sea monster attacks are a constant threat around Bilgewater, but over the years myriad lucrative industries have grown out of hunting and harvesting the massive creatures. Vessels haul them back to port, to be rendered down into meat, oils, hides, armored scales—even bones and teeth—for sale at the thriving dockside markets.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bilge04.png" alt="vision-bilge04">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Butcher's Bridge</p>
+								<span>Looming over the main harbor is Butcher’s Bridge, an ancient stone overpass built into the cliffs, connecting the bustling piers with the notorious slums beyond. Some still use it to access the Temple of Nagakabouros, but most now gather here to fight duels or exchange their illicit wares.</span>
+							</div>
+						</div>
+						<div class="p-reg-detail__vision-inner--item fade">
+							<div class="p-reg-detail__vision-inner--img">
+								<img src="../assets/images/vision-bilge05.png" alt="vision-bilge05">
+							</div>
+							<div class="p-reg-detail__vision-inner--txt">
+								<p>Butcher's Bridge</p>
+								<span>Looming over the main harbor is Butcher’s Bridge, an ancient stone overpass built into the cliffs, connecting the bustling piers with the notorious slums beyond. Some still use it to access the Temple of Nagakabouros, but most now gather here to fight duels or exchange their illicit wares.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__champ">
+					<p class="c-title02">Champions in Bilgewater</p>
+					<div class="p-reg-detail__champ-list">
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-fizz.html">
+									<img src="../assets/images/champ-fizz.png" alt="champ-fizz">
+									<p class="p-reg-detail__champ-txt">fizz</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-gang.html">
+									<img src="../assets/images/champ-gang.png" alt="champ-gang">
+									<p class="p-reg-detail__champ-txt">gangplank</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-graves.html">
+									<img src="../assets/images/champ-graves.png" alt="champ-graves">
+									<p class="p-reg-detail__champ-txt">graves</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-illaoi.html">
+									<img src="../assets/images/champ-illaoi.png" alt="champ-illaoi">
+									<p class="p-reg-detail__champ-txt">illaoi</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-miss.html">
+									<img src="../assets/images/champ-miss.png" alt="champ-miss">
+									<p class="p-reg-detail__champ-txt">miss fortune</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-nau.html">
+									<img src="../assets/images/champ-nau.png" alt="champ-nau">
+									<p class="p-reg-detail__champ-txt">nautilus</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-pyke.html">
+									<img src="../assets/images/champ-pyke.png" alt="champ-pyke">
+									<p class="p-reg-detail__champ-txt">pyke</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-tahm.html">
+									<img src="../assets/images/champ-tahm.png" alt="champ-tahm">
+									<p class="p-reg-detail__champ-txt">tahm kench</p>
+								</a>
+						</div>
+						<div class="p-reg-detail__champ-item">
+							<a href="../p-champ/lol-tf.html">
+									<img src="../assets/images/champ-tf.png" alt="champ-tf">
+									<p class="p-reg-detail__champ-txt">twisted fate</p>
+								</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-reg-detail__other">
+					<p class="c-title02">Other Regions</p>
+					<div class="p-reg-detail__other-list">
+						<div class="p-reg-detail__other-item"><a href="lol-bandle.html"><img src="../assets/images/bandle-logo.png"
+									alt="bandle-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-demacia.html"><img src="../assets/images/demacia-logo.png"
+									alt="demacia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ionia.html"><img src="../assets/images/ionia-logo.png"
+									alt="ionia-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-ixtal.html"><img src="../assets/images/ixtal-logo.png"
+									alt="ixtal-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-noxus.html"><img src="../assets/images/noxus-logo.png"
+									alt="noxus-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-piltover.html"><img
+									src="../assets/images/piltover-logo.png" alt="piltover-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shadow.html"><img src="../assets/images/shadow-logo.png"
+									alt="shadow-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-shurima.html"><img src="../assets/images/shurima-logo.png"
+									alt="shurima-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-targon.html"><img src="../assets/images/targon-logo.png"
+									alt="targon-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-frel.html"><img src="../assets/images/frel-logo.png"
+									alt="frel-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-void.html"><img src="../assets/images/void-logo.png"
+									alt="void-logo"></a></div>
+						<div class="p-reg-detail__other-item"><a href="lol-zaun.html"><img src="../assets/images/zaun-logo.png"
+									alt="zaun-logo"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a class="active" href="../lol-reg.html">Regions</a></li>
+			<li><a href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-reg.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

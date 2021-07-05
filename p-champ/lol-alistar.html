@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Alistar - The Minotaur</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<img src="../assets/images/champ-alistar.png" alt="champ-alistar">
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a href="../lol-reg.html">Regions</a></li>
+			<li><a class="active" href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-champ-detail">
+		<div class="l-container">
+			<div class="p-champ-detail__inner">
+				<div class="p-champ-detail__intro">
+					<div class="p-champ-detail__name">
+						<div class="c-title01">
+							<span>Alistar</span>
+						</div>
+						<div class="c-title03">
+							<span>The Minotaur</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__about">
+						<div class="p-champ-detail__role">
+							<img src="../assets/images/tank.png" alt="tank">
+							<p>tank</p>
+						</div>
+						<div class="p-champ-detail__bio">
+							<p>“Nothing can hold me back!”</p>
+							<span>
+								Always a mighty warrior with a fearsome reputation, Alistar seeks revenge for the death
+								of his clan at the hands of the Noxian empire. Though he was enslaved and forced into
+								the life of a gladiator, his unbreakable will was what kept him from truly becoming a
+								beast. Now, free of the chains of his former masters, he fights in the name of the
+								downtrodden and the disadvantaged, his rage as much a weapon as his horns, hooves and
+								fists.</span>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__screenshot"><img src="../assets/images/alistar-screen.png"
+						alt="alistar-screen"></div>
+				<div class="p-champ-detail__ability">
+					<p class="c-title02">Abilities</p>
+					<div class="p-champ-detail__ability-list only-768">
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/alistarP.png"
+								alt="alistarP" onclick="currentSlide01(1)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/alistarQ.png"
+								alt="alistarQ" onclick="currentSlide01(2)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/alistarW.png"
+								alt="alistarW" onclick="currentSlide01(3)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/alistarE.png"
+								alt="alistarE" onclick="currentSlide01(4)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/alistarR.png"
+								alt="alistarR" onclick="currentSlide01(5)"></div>
+					</div>
+					<div class="p-champ-detail__ability-txt only-768">
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>TRIUMPHANT ROAR (Passive)</p>
+							<span>Alistar charges his roar by stunning or displacing enemy champions or when nearby
+								enemies die. When fully charged he heals himself all nearby allied champions.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>PULVERIZE (Q)</p>
+							<span>Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the
+								air.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>HEADBUTT (W)</p>
+							<span>Alistar rams a target with his head, dealing damage and knocking the target
+								back.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>TRAMPLE (E)</p>
+							<span>Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he
+								damages an enemy champion. At full stacks Alistar's next basic attack against an enemy
+								champion deals additional magic damage and stuns them.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>UNBREAKABLE WILL (R)</p>
+							<span>Alistar lets out a wild roar, removing all crowd control effects on himself, and
+								reducing incoming physical and magical damage for the duration.</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-vid only-768">
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/alistarP.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/alistarQ.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/alistarW.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/alistarE.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/alistarR.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-box pc-769">
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/alistarP.png" alt="alistarP">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>TRIUMPHANT ROAR (Passive)</p>
+								<span>Alistar charges his roar by stunning or displacing enemy champions or when nearby
+									enemies die. When fully charged he heals himself all nearby allied champions.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/alistarQ.png" alt="alistarQ">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>PULVERIZE (Q)</p>
+								<span>Alistar smashes the ground, dealing damage to nearby enemies and tossing them into
+									the air.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/alistarW.png" alt="alistarW">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>HEADBUTT (W)</p>
+								<span>Alistar rams a target with his head, dealing damage and knocking the target
+									back.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/alistarE.png" alt="alistarE">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>TRAMPLE (E)</p>
+								<span>Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if
+									he damages an enemy champion. At full stacks Alistar's next basic attack against an
+									enemy champion deals additional magic damage and stuns them.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/alistarR.png" alt="alistarR">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>UNBREAKABLE WILL (R)</p>
+								<span>Alistar lets out a wild roar, removing all crowd control effects on himself, and
+									reducing incoming physical and magical damage for the duration.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__skin">
+					<p class="c-title02">Available Skins</p>
+					<div class="p-champ-detail__skin-inner">
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-01.png" alt="alistar-01">
+							<p>Golden Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-02.png" alt="alistar-02">
+							<p>Infernal Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-03.png" alt="alistar-03">
+							<p>Marauder Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-04.png" alt="alistar-04">
+							<p>Moo Cow Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-05.png" alt="alistar-05">
+							<p>Blackfrost Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-06.png" alt="alistar-06">
+							<p>Longhorn Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-07.png" alt="alistar-07">
+							<p>Sweeper Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-08.png" alt="alistar-08">
+							<p>Lunar Beast Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-09.png" alt="alistar-09">
+							<p>Conqueror Alistar</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/alistar-10.png" alt="alistar-10">
+							<p>Hextech Alistar</p>
+						</div>
+					</div>
+					<div class="p-champ-detail__skin-list only-768">
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(1)"><img
+								src="../assets/images/alistar-01.png" alt="alistar-01"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(2)"><img
+								src="../assets/images/alistar-02.png" alt="alistar-02"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(3)"><img
+								src="../assets/images/alistar-03.png" alt="alistar-03"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(4)"><img
+								src="../assets/images/alistar-04.png" alt="alistar-04"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(5)"><img
+								src="../assets/images/alistar-05.png" alt="alistar-05"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(6)"><img
+								src="../assets/images/alistar-06.png" alt="alistar-06"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(7)"><img
+								src="../assets/images/alistar-07.png" alt="alistar-07"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(8)"><img
+								src="../assets/images/alistar-08.png" alt="alistar-08"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(9)"><img
+								src="../assets/images/alistar-09.png" alt="alistar-09"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(10)"><img
+								src="../assets/images/alistar-10.png" alt="alistar-10"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a class="active" href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-champ.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

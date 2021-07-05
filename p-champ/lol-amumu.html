@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Amumu - The Sad Mummy</title>
+	<script src="../assets/js/jquery-3.2.0.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<div class="c-bg">
+		<img src="../assets/images/champ-amumu.png" alt="champ-amumu">
+	</div>
+	<header class="c-header">
+		<h1 class="c-header__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></h1>
+		<div class="c-header__toggle pc-769">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="c-header__nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../lol-cine.html">Cinematic</a></li>
+			<li><a href="../lol-reg.html">Regions</a></li>
+			<li><a class="active" href="../lol-champ.html">Champions</a></li>
+			<li><a href="../lol-skin.html">Skin Universes</a></li>
+		</ul>
+
+	</header><!-- /header -->
+
+	<main class="p-champ-detail">
+		<div class="l-container">
+			<div class="p-champ-detail__inner">
+				<div class="p-champ-detail__intro">
+					<div class="p-champ-detail__name">
+						<div class="c-title01">
+							<span>Amumu</span>
+						</div>
+						<div class="c-title03">
+							<span>The Sad Mummy</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__about">
+						<div class="p-champ-detail__role">
+							<img src="../assets/images/tank.png" alt="tank">
+							<p>tank</p>
+						</div>
+						<div class="p-champ-detail__bio">
+							<p>“Solitude can be lonelier than death.”</p>
+							<span>
+								Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming
+								the world in search of a friend. Doomed by an ancient curse to remain alone forever, his
+								touch is death, his affection ruin. Those who claim to have seen him describe a living
+								cadaver, small in stature and wrapped in creeping bandages. Amumu has inspired myths,
+								songs, and folklore told and retold for generations—such that it is impossible to
+								separate truth from fiction.</span>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__screenshot"><img src="../assets/images/amumu-screen.png" alt="amumu-screen">
+				</div>
+				<div class="p-champ-detail__ability">
+					<p class="c-title02">Abilities</p>
+					<div class="p-champ-detail__ability-list only-768">
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/amumuP.png"
+								alt="amumuP" onclick="currentSlide01(1)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/amumuQ.png"
+								alt="amumuQ" onclick="currentSlide01(2)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/amumuW.png"
+								alt="amumuW" onclick="currentSlide01(3)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/amumuE.png"
+								alt="amumuE" onclick="currentSlide01(4)"></div>
+						<div class="p-champ-detail__ability-list--item"><img src="../assets/images/amumuR.png"
+								alt="amumuR" onclick="currentSlide01(5)"></div>
+					</div>
+					<div class="p-champ-detail__ability-txt only-768">
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>CURSED TOUCH (Passive)</p>
+							<span>Amumu's basic attacks Curse his enemies, causing them to take bonus true damage from
+								incoming magic damage.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>BANDAGE TOSS (Q)</p>
+							<span>Amumu tosses a sticky bandage at a target, stunning and damaging the target while he
+								pulls himself to them.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>DESPAIR (W)</p>
+							<span>Overcome by anguish, nearby enemies lose a percentage of their maximum Health each
+								second and have their Curses refreshed.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>TANTRUM (E)</p>
+							<span>Permanently reduces the physical damage Amumu would take. Amumu can unleash his rage,
+								dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on Tantrum
+								is reduced by 0.5 seconds.</span>
+						</div>
+						<div class="p-champ-detail__ability-txt--item fade">
+							<p>CURSE OF THE SAD MUMMY (R)</p>
+							<span>Amumu entangles surrounding enemy units in bandages, applying his Curse, damaging and
+								stunning them.</span>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-vid only-768">
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/amumuP.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/amumuQ.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/amumuW.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/amumuE.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="p-champ-detail__ability-vid--item fade">
+							<video autoplay muted loop>
+								<source src="../assets/images/amumuR.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<div class="p-champ-detail__ability-box pc-769">
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/amumuP.png" alt="amumuP">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>CURSED TOUCH (Passive)</p>
+								<span>Amumu's basic attacks Curse his enemies, causing them to take bonus true damage
+									from incoming magic damage.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/amumuQ.png" alt="amumuQ">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>BANDAGE TOSS (Q)</p>
+								<span>Amumu tosses a sticky bandage at a target, stunning and damaging the target while
+									he pulls himself to them.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/amumuW.png" alt="amumuW">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>DESPAIR (W)</p>
+								<span>Overcome by anguish, nearby enemies lose a percentage of their maximum Health each
+									second and have their Curses refreshed.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/amumuE.png" alt="amumuE">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>TANTRUM (E)</p>
+								<span>Permanently reduces the physical damage Amumu would take. Amumu can unleash his
+									rage, dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on
+									Tantrum is reduced by 0.5 seconds.</span>
+							</div>
+						</div>
+						<div class="p-champ-detail__ability-box--item">
+							<img src="../assets/images/amumuR.png" alt="amumuR">
+							<div class="p-champ-detail__ability-box--txt">
+								<p>CURSE OF THE SAD MUMMY (R)</p>
+								<span>Amumu entangles surrounding enemy units in bandages, applying his Curse, damaging
+									and stunning them.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-champ-detail__skin">
+					<p class="c-title02">Available Skins</p>
+					<div class="p-champ-detail__skin-inner">
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-01.png" alt="amumu-01">
+							<p>Emumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-02.png" alt="amumu-02">
+							<p>Little Knight Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-03.png" alt="amumu-03">
+							<p>Almost-Prom King Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-04.png" alt="amumu-04">
+							<p>Surprise Party Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-05.png" alt="amumu-05">
+							<p>Infernal Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-06.png" alt="amumu-06">
+							<p>Pharaoh Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-07.png" alt="amumu-07">
+							<p>Vancouver Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-08.png" alt="amumu-08">
+							<p>Re-Gifted Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-09.png" alt="amumu-09">
+							<p>Hextech Amumu</p>
+						</div>
+						<div class="p-champ-detail__skin-inner--item fade">
+							<img src="../assets/images/amumu-10.png" alt="amumu-10">
+							<p>Pumpkin Prince Amumu</p>
+						</div>
+					</div>
+					<div class="p-champ-detail__skin-list only-768">
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(1)"><img
+								src="../assets/images/amumu-01.png" alt="amumu-01"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(2)"><img
+								src="../assets/images/amumu-02.png" alt="amumu-02"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(3)"><img
+								src="../assets/images/amumu-03.png" alt="amumu-03"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(4)"><img
+								src="../assets/images/amumu-04.png" alt="amumu-04"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(5)"><img
+								src="../assets/images/amumu-05.png" alt="amumu-05"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(6)"><img
+								src="../assets/images/amumu-06.png" alt="amumu-06"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(7)"><img
+								src="../assets/images/amumu-07.png" alt="amumu-07"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(8)"><img
+								src="../assets/images/amumu-08.png" alt="amumu-08"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(9)"><img
+								src="../assets/images/amumu-09.png" alt="amumu-09"></div>
+						<div class="p-champ-detail__skin-list--item" onclick="currentSlide02(10)"><img
+								src="../assets/images/amumu-10.png" alt="amumu-10"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-backtop"><a>Top</a></div>
+	</main><!-- /main -->
+
+	<footer class="c-footer">
+		<div class="l-container">
+			<div class="c-footer__inner">
+				<div class="c-footer__info">
+					<div class="c-footer__logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="c-footer__nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../lol-cine.html">Cinematic</a></li>
+						<li><a href="../lol-reg.html">Regions</a></li>
+						<li><a href="../lol-champ.html">Champions</a></li>
+						<li><a class="active" href="../lol-skin.html">Skin Universes</a></li>
+					</ul>
+				</div>
+				<div class="c-footer__fb">
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId&adapt_container_width=true"
+						class="pc" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+					<iframe
+						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleagueoflegends&tabs=timeline&width=335&height=500&small_header=false&hide_cover=false&show_facepile=true&appId&adapt_container_width=false"
+						class="sp" scrolling="no" frameborder="0" allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+					</iframe>
+				</div>
+				<div class="c-footer__tw">
+					<a class="twitter-timeline" data-lang="en" data-width="727" data-height="500" data-theme="dark"
+						href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Etfw"></a>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<script src="../assets/js/lol.js"></script>
+	<script src="../assets/js/lol-champ.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

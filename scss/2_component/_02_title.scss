@@ -1,0 +1,62 @@
+/*------------------------------------------------------------
+Title
+------------------------------------------------------------*/
+
+.c-title01 {
+	text-align: center;
+	margin-bottom: 50px;
+	@include max(1024px) {
+		margin-bottom: 40px;
+	}
+	@include max(767px) {
+		margin-bottom: 30px;
+	}
+	span {
+		padding: 0 70px;
+		position: relative;
+		font-family: 'Playball', cursive;
+		font-size: 48px;
+		color: $color1;
+		text-shadow: 1px 1px 1px $color3,
+		1px 2px 1px $color3,
+		1px 3px 1px $color3,
+		1px 4px 1px $color3,
+		0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+		@include max(767px) {
+			font-size: 32px;
+			padding: 0;
+			text-shadow: 1px 1px 1px $color3,
+			1px 2px 1px $color3,
+			1px 3px 1px $color3,
+			0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+		}
+	}
+}
+.c-title02 {
+	width: 100%;
+	font-family: 'Playball', cursive;
+	font-size: 36px;
+	color: $color1;
+	margin-bottom: 30px;
+	text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3, 0px 0px 20px $color3;
+	@include max(767px) {
+		font-size: 28px;
+		margin-bottom: 20px;
+		text-shadow: 0px 0px 5px $color3, 0px 0px 10px $color3, 0px 0px 15px $color3;
+	}
+}
+.c-title03 {
+	text-transform: uppercase;
+	color: $color3;
+	font-weight: 500;
+	font-size: 28px;
+	text-align: center;
+	margin-top: -40px;
+	@include max(1024px) {
+		margin-top: -30px;
+	}
+	@include max(767px) {
+		margin-top: -20px;
+		font-size: 20px;
+	}
+}
